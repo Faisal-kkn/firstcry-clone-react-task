@@ -1,2 +1,5 @@
-export * from "./Home"
+export * from "./RegisterLayout"
 export * from "./Layout"
+export * from "./Home"
+export * from "./Login"
+export * from "./Register"
