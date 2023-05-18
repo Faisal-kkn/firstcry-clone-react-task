@@ -2,20 +2,28 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { ChevronLeftIcon, EyeIcon, EyeSlashIcon } from '@heroicons/react/24/solid'
 import { useForm } from "react-hook-form";
+import { useNavigate } from 'react-router-dom';
 
 export const Register = () => {
-
+    const Navigate = useNavigate()
     const [registerData, setRegisterData] = useState({ name: '', mobile: '', email: '', password: '' })
     const { register, handleSubmit, watch, formState: { errors } } = useForm();
     const [isPasswordVisible, setIsPasswordVisible] = useState(false);
+    let [usersData, setUsersData] = useState(localStorage.getItem("users") ? JSON.parse(localStorage.getItem("users")) : [])
 
     function togglePasswordVisibility() {
         setIsPasswordVisible((prevState) => !prevState);
     }
 
-
     const registerSubmit = () => {
-
+        if (localStorage.getItem("users")){
+            setUsersData([...usersData, registerData])
+            localStorage.setItem("users", JSON.stringify(usersData))
+            Navigate("/login")
+        }else{
+            localStorage.setItem("users", JSON.stringify([registerData]));
+            Navigate("/login")
+        }
     }
 
     const handleChange = (e) => {
@@ -36,12 +44,12 @@ export const Register = () => {
             <form className="flex flex-col" onSubmit={handleSubmit(registerSubmit)}>
                 <div>
                     <label className="form-label" htmlFor="name" >Full Name</label>
-                    <input {...register('name', { required: true, maxLength: 30 })} onChange={handleChange} id="name" value={registerData.name} type="email" className="input-field" placeholder="Enter your Full Name" />
+                    <input {...register('name', { required: true, maxLength: 30 })} onChange={handleChange} id="name" value={registerData.name} type="text" className="input-field" placeholder="Enter your Full Name" />
                     {errors.name && <p className="text-[12px] text-red-600">Please enter your full name</p>}
                 </div>
                 <div className="mt-2">
                     <label className="form-label" htmlFor="mobile" >Mobile Number</label>
-                    <input {...register('mobile', { required: true, pattern: /^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/, minLength: 10, maxLength: 10 })} onChange={handleChange} id="mobile" value={registerData.mobile} type="email" className="input-field" placeholder="Enter your Mobile Number" />
+                    <input {...register('mobile', { required: true, pattern: /^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/, minLength: 10, maxLength: 10 })} onChange={handleChange} id="mobile" value={registerData.mobile} type="number" className="input-field" placeholder="Enter your Mobile Number" />
                     <p className="text-[12px]">OTP will be sent on this Mobile No. for verification.</p>
                     {errors.mobile && <p className="text-[12px] text-red-600">Please enter your Mobile Number</p>}
                 </div>

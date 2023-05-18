@@ -1,6 +1,6 @@
 import { ChevronDownIcon, MagnifyingGlassIcon, HeartIcon, ShoppingCartIcon, MapPinIcon } from '@heroicons/react/24/solid'
 
-export const MobileHeader = () => {
+export const MobileHeader = ({ cart }) => {
 
     return (
         <>
@@ -21,7 +21,7 @@ export const MobileHeader = () => {
                             <HeartIcon className='h-8 text-[#9e9e9e]' />
                             <div className='relative'>
                                 <ShoppingCartIcon className='h-8 text-[#9e9e9e]' />
-                                <span className='absolute top-[-10px] right-0 bg-[#fcdb65] p-1 text-[11px] rounded-sm'>3</span>
+                                <span className='absolute top-[-10px] right-0 bg-[#fcdb65] p-1 text-[11px] rounded-sm'>{cart}</span>
                             </div>
                         </div>
                     </header>

@@ -272,7 +272,7 @@ export const MobileHome = () => {
 
     ]
 
-    const mostLoved= [
+    const mostLoved = [
         'https://cdn.fcglcdn.com/brainbees/images/cattemplate/458_217_MLB_Def_270423_07.webp',
         'https://cdn.fcglcdn.com/brainbees/images/cattemplate/458_217_MLB_Def_270423_10.webp',
         'https://cdn.fcglcdn.com/brainbees/images/cattemplate/458_217_MLB_Def_270423_030.webp',
@@ -285,7 +285,7 @@ export const MobileHome = () => {
         'https://cdn.fcglcdn.com/brainbees/images/m/place_holder_banner.png',
     ]
 
-    const internationalBrands= [
+    const internationalBrands = [
         'https://cdn.fcglcdn.com/brainbees/images/cattemplate/438_624_Summer_Defualt_international_carousal_180223_07.webp',
         'https://cdn.fcglcdn.com/brainbees/images/cattemplate/438_624_Summer_Defualt_international_carousal_180223_02.webp',
         'https://cdn.fcglcdn.com/brainbees/images/cattemplate/438_624_Summer_Defualt_international_carousal_180223_14.webp',
@@ -301,10 +301,90 @@ export const MobileHome = () => {
 
     const splashSale = [
         {
-            img: '',
-            heading: '',
-            discription: '',
-        }
+            img: 'https://cdn.fcglcdn.com/brainbees/images/boutique/670x670/29867.webp',
+            heading: 'Slay All Day | 2 - 7Y',
+            description: 'Frocks, Dresses, Shirts, Sets & more',
+            left: '6d left'
+        },
+        {
+            img: 'https://cdn.fcglcdn.com/brainbees/images/boutique/670x670/29868.webp',
+            heading: 'Slay All Day | 2 - 7Y',
+            description: 'Frocks, Dresses, Shirts, Sets & more',
+            left: '6d left'
+        },
+        {
+            img: 'https://cdn.fcglcdn.com/brainbees/images/boutique/670x670/29870.web',
+            heading: 'Slay All Day | 2 - 7Y',
+            description: 'Frocks, Dresses, Shirts, Sets & more',
+            left: '6d left'
+        },
+        {
+            img: 'https://cdn.fcglcdn.com/brainbees/images/boutique/670x670/29873.webp',
+            heading: 'Slay All Day | 2 - 7Y',
+            description: 'Frocks, Dresses, Shirts, Sets & more',
+            left: '6d left'
+        },
+        {
+            img: 'https://cdn.fcglcdn.com/brainbees/images/boutique/670x670/29869.webp',
+            heading: 'Slay All Day | 2 - 7Y',
+            description: 'Frocks, Dresses, Shirts, Sets & more',
+            left: '6d left'
+        },
+        {
+            img: 'https://cdn.fcglcdn.com/brainbees/images/boutique/670x670/29872.webp',
+            heading: 'Slay All Day | 2 - 7Y',
+            description: 'Frocks, Dresses, Shirts, Sets & more',
+            left: '6d left'
+        },
+        {
+            img: 'https://cdn.fcglcdn.com/brainbees/images/boutique/670x670/29871.web',
+            heading: 'Slay All Day | 2 - 7Y',
+            description: 'Frocks, Dresses, Shirts, Sets & more',
+            left: '6d left'
+        },
+        {
+            img: 'https://cdn.fcglcdn.com/brainbees/images/boutique/670x670/29874.webp',
+            heading: 'Slay All Day | 2 - 7Y',
+            description: 'Frocks, Dresses, Shirts, Sets & more',
+            left: '6d left'
+        },
+        {
+            img: 'https://cdn.fcglcdn.com/brainbees/images/m/place_holder.png',
+            heading: 'Slay All Day | 2 - 7Y',
+            description: 'Frocks, Dresses, Shirts, Sets & more',
+            left: '6d left'
+        },
+        {
+            img: 'https://cdn.fcglcdn.com/brainbees/images/boutique/670x670/29852.webp',
+            heading: 'Slay All Day | 2 - 7Y',
+            description: 'Frocks, Dresses, Shirts, Sets & more',
+            left: '6d left'
+        },
+        {
+            img: 'https://cdn.fcglcdn.com/brainbees/images/m/place_holder.png',
+            heading: 'Slay All Day | 2 - 7Y',
+            description: 'Frocks, Dresses, Shirts, Sets & more',
+            left: '6d left'
+        },
+        {
+            img: 'https://cdn.fcglcdn.com/brainbees/images/boutique/670x670/29859.webp',
+            heading: 'Slay All Day | 2 - 7Y',
+            description: 'Frocks, Dresses, Shirts, Sets & more',
+            left: '6d left'
+        },
+    ]
+
+    const recentlyAdded = [
+        'https://cdn.fcglcdn.com/brainbees/banners/mobile/12.1_parenting_things_mar231677229200804.png',
+        'https://cdn.fcglcdn.com/brainbees/banners/mobile/12.2_parenting_things_mar231677229210979.png',
+        'https://cdn.fcglcdn.com/brainbees/banners/mobile/12.3_parenting_things_mar231677229219178.png',
+        'https://cdn.fcglcdn.com/brainbees/banners/mobile/12.4_parenting_things_mar231677229227949.png',
+    ]
+
+    const recent = [
+        'https://cdn.fcglcdn.com/brainbees/banners/mobile/014.1_parenting_things_mar231677234280530.png',
+        'https://cdn.fcglcdn.com/brainbees/banners/mobile/014.2_parenting_things_mar231677234331156.png',
+        'https://cdn.fcglcdn.com/brainbees/banners/mobile/014.3_parenting_things_mar231677234334442.png',
     ]
 
     return (
@@ -468,13 +548,47 @@ export const MobileHome = () => {
                 <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/750_136_nternationa_Brands_Carousel_300822.jpg" alt="" />
                 <ScrollCards data={internationalBrands} className={'w-[300px] pt-5'} />
             </div>
-            <div className="bg-[#2f2f2f]">
+            <div className="bg-[#2f2f2f] pb-2">
                 <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/Default_176x640_summer23.gif" alt="" />
                 {
-
+                    splashSale.map((item, index) => {
+                        return (
+                            <SplashCards key={index} data={item} />
+                        )
+                    })
                 }
-                <SplashCards />
             </div>
+            <div>
+                <img src="https://cdn.fcglcdn.com/brainbees/apps/image/1_parenting_things_mar23.webp" alt="" />
+                <img src="https://cdn.fcglcdn.com/brainbees/apps/image/2_parenting_things_mar23.webp" alt="" />
+            </div>
+            <div className="grid grid-cols-2">
+                <img src="https://cdn.fcglcdn.com/brainbees/apps/image/3_parenting_things_mar23.webp" alt="" />
+                <img src="https://cdn.fcglcdn.com/brainbees/apps/image/4_parenting_things_mar23.webp" alt="" />
+            </div>
+            <div>
+                <img src="https://cdn.fcglcdn.com/brainbees/apps/image/05_parenting_things_mar23.webp" alt="" />
+                <img src="https://cdn.fcglcdn.com/brainbees/apps/image/06_parenting_things_mar23.webp" alt="" />
+                <img src="https://cdn.fcglcdn.com/brainbees/apps/image/07_parenting_things_mar23.webp" alt="" />
+            </div>
+            <div >
+                <img className="mty-2" src="https://cdn.fcglcdn.com/brainbees/banners/mobile/8_parenting_things_mar231677228829555.jpg" alt="" />
+                <img src="https://cdn.fcglcdn.com/brainbees/apps/image/09_parenting_things_mar23.webp" alt="" />
+                <img src="https://cdn.fcglcdn.com/brainbees/apps/image/010_parenting_things_mar23.webp" alt="" />
+                <img src="https://cdn.fcglcdn.com/brainbees/apps/image/011_parenting_things_mar23.webp" alt="" />
+                <img className="my-2" src="https://cdn.fcglcdn.com/brainbees/banners/mobile/12_parenting_things_mar231677229149018.jpg" alt="" />
+                <div className="bg-[#2e1a0f]">
+                    <ScrollCards data={recentlyAdded} className={'w-[300px] pt-5'} />
+                </div>
+                <img className="my-2" src="https://cdn.fcglcdn.com/brainbees/banners/mobile/13_parenting_things_mar231677229344230.jpg" alt="" />
+                <img src="https://cdn.fcglcdn.com/brainbees/banners/mobile/13.10_parenting_things_mar231677231933305.jpg" alt="" />
+                <img className="my-2" src="https://cdn.fcglcdn.com/brainbees/banners/mobile/14_parenting_things_mar231677229594366.jpg" alt="" />
+                <div className="bg-[#2e1a0f]">
+                    <ScrollCards data={recent} className={'w-[350px] pt-5'} />
+                </div>
+                <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/free_hight_banner_2to4_years.webp" alt="" />
+            </div>
+
         </main>
     )
 }

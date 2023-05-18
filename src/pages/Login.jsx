@@ -1,10 +1,13 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
+import { useState, useContext } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import { UserContext } from '../AppContext';
 
 export const Login = () => {
+    const Navigate = useNavigate()
 
-    const [login, setLogin] = useState("")
+    const [login, setLogin] = useState('')
     const [error, setError] = useState(null);
+    const { setUserData } = useContext(UserContext);
 
     function isValidEmail(email) {
         return /\S+@\S+\.\S+/.test(email);
@@ -14,11 +17,22 @@ export const Login = () => {
         return /^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/.test(phone);
     }
 
-    const loginSubmit = () => {
+    const loginSubmit = (e) => {
+        e.preventDefault()
         if (login === '') {
             setError('Please enter your Email ID or Mobile No.');
         } else {
             setError(null);
+            let users = JSON.parse(localStorage.getItem("users")) || []
+            const email = users.some(user => user.email === login);
+            let mobile = users.some((item) => item.mobile === login)
+
+            if (email || mobile){
+                setUserData(true)
+                Navigate("/")
+            }else{
+                setError('user not exist')
+            }
         }
     }
 

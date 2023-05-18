@@ -1,6 +1,6 @@
 export const ScrollCards = ({data, className=''})=>{
     return(
-        <div className="flex overflow-x-scroll">
+        <div className="flex overflow-x-scroll scrollbar">
             {
                 data.map((item, index)=>{
                     return(

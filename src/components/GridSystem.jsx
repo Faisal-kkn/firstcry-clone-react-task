@@ -1,10 +1,10 @@
-export const GridSystem = ({ col, data, className = '', imgClass = '', key}) => {
+export const GridSystem = ({ col, data, className = '', imgClass = ''}) => {
     return (
         <div className={`grid grid-cols-${col}  ${className} `}>
             {
                 data.map((item, index) => {
                     return (
-                        <img key={key+''+index} src={item} alt={item} className={`w-full ${imgClass} `} />
+                        <img key={index} src={item} alt={item} className={`w-full ${imgClass} `} />
                     )
                 })
             }

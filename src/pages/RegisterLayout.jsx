@@ -1,6 +1,15 @@
-import React from 'react'
-import { Outlet } from 'react-router-dom';
+import { useContext, useEffect } from 'react'
+import { Outlet, useNavigate } from 'react-router-dom';
+import { UserContext } from '../AppContext';
+
 export const RegisterLayout = () => {
+  const { userData } = useContext(UserContext);
+  const Navigate = useNavigate()
+
+  useEffect(() => {
+    if (userData) Navigate('/')
+  }, [userData])
+
   return (
     <>
       <div className="py-4 mt-5">

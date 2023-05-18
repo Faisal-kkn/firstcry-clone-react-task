@@ -1,5 +1,5 @@
 import { MagnifyingGlassIcon, MapPinIcon, HeartIcon, ShoppingCartIcon, ChevronDownIcon } from '@heroicons/react/24/solid'
-
+import { Link } from 'react-router-dom'
 
 export const Header = () => {
 
@@ -78,7 +78,7 @@ export const Header = () => {
                         {
                             mainMenu.map((item, index) => {
                                 return (
-                                    <li key={index} className='text-center cursor-pointer px-1 text-[13px] hover:bg-white py-3'>{item}</li>
+                                    <li key={index} className='text-center cursor-pointer px-1 text-[13px] hover:bg-white py-3'><Link to={'/products'}>{item}</Link></li>
                                 )
                             })
                         }

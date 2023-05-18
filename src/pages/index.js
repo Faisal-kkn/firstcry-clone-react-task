@@ -1,5 +1,6 @@
 export * from "./RegisterLayout"
 export * from "./Layout"
 export * from "./Home"
+export * from "./Products"
 export * from "./Login"
 export * from "./Register"

@@ -87,8 +87,8 @@ body {
   height: 17px;
 }
 
-.premium-card{
-    transition: all .5s;
+.premium-card {
+  transition: all .5s;
 }
 
 .premium-card-body:hover h5 {
@@ -109,36 +109,94 @@ body {
   transition: all .5s;
 }
 
-.premium-card-body:hover .image-box{
+.premium-card-body:hover .image-box {
   display: block;
   transition: all .5s;
 }
 
-.footer-top-sticky{
-      background-color: #fff;
-        border-radius: 30px;
-        clear: both;
-        height: 60px;
-        margin: 0 auto;
-        position: relative;
-        text-align: center;
-        top: -37px;
-        width: 470px;
-        z-index: 3;
-        box-shadow: 0 0 3px #e0e0e0;
+.footer-top-sticky {
+  background-color: #fff;
+  border-radius: 30px;
+  clear: both;
+  height: 60px;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+  top: -37px;
+  width: 470px;
+  z-index: 3;
+  box-shadow: 0 0 3px #e0e0e0;
 }
 
-.slick-dots{
+.slick-dots {
   bottom: 5px !important;
 }
 
-.see-all-btn{
+.see-all-btn {
   font-size: 14px;
-    color: #2d60ad;
-    padding: 7px 25px;
-    border: 1px solid;
-    border-radius: 3px;
-    text-align: center;
-    margin: 0 auto;
-    width: fit-content;
+  color: #2d60ad;
+  padding: 7px 25px;
+  border: 1px solid;
+  border-radius: 3px;
+  text-align: center;
+  margin: 0 auto;
+  width: fit-content;
+}
+
+.splash-card-heading {
+  color: #757575;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.splash-card-description {
+  color: #9e9e9e;
+  padding: 3px 0px;
+  font-size: 15px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+
+/* width */
+.scrollbar::-webkit-scrollbar {
+  height: 5px;
+  border-radius: 100%;
+}
+
+/* Track */
+.scrollbar::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+.scrollbar::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+.scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #777;
+}
+
+.single-product:hover h6{
+  visibility: hidden;
+  height: 0;
+  width: 0;
+  overflow: hidden;
+  transition: all .3s;
+}
+
+.single-product button {
+  visibility: hidden;
+  height: 0;
+  width: 0;
+  overflow: hidden;
+}
+.single-product:hover button {
+  visibility: visible;
+  height: auto;
+  width: auto;
+  overflow: visible;
+  transition: all .3s;
 }

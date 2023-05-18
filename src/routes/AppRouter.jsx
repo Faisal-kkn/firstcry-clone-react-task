@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import { Paths } from "./path";
-import { HomePage, Layout, Login, Register, RegisterLayout } from "../pages/index";
+import { HomePage, Layout, Login, Register, RegisterLayout, Products } from "../pages/index";
 export const AppRouter = () => {
     return (
         <Routes>
@@ -10,6 +10,7 @@ export const AppRouter = () => {
             </Route>
             <Route element={<Layout />} >
                 <Route path={Paths.home} element={<HomePage />} />
+                <Route path={Paths.products} element={<Products />} />
             </Route>
         </Routes>
     );
