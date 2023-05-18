@@ -1,12 +1,18 @@
 import React from 'react'
 import { Outlet } from 'react-router-dom';
-import { Header, Footer } from '../components/index'
+import { Header, Footer, useWindowSize, MobileHeader, MobileFooter } from '../components/index'
 export const Layout = () => {
+  const size = useWindowSize();
   return (
     <>
-      <Header />
+      {size.width > 600 ?
+        <Header /> : <MobileHeader />
+      }
       <Outlet />
-      <Footer />
+      {size.width > 600 ?
+        <Footer /> : <MobileFooter />
+      }
+
     </>
   )
 }

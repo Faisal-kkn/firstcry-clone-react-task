@@ -148,23 +148,23 @@ export const Footer = () => {
                         <div className="footer-top-sticky" style={{ backgroundImage: `url('https://cdn.fcglcdn.com/brainbees/images/sprite-footer1.1.png')`, backgroundPosition: '-122px -81px' }}></div>
                         <div className="grid grid-cols-5 text-center w-10/12 mx-auto">
                             <div>
-                                <div className="w-[37px] h-[46px] mx-auto" style={{ backgroundImage: `url('https://cdn.fcglcdn.com/brainbees/images/sprite-footer1.1.png')`, backgroundPosition: '-122px -81px', backgroundPosition: '-151px 346px' }}></div>
+                                <div className="w-[37px] h-[46px] mx-auto" style={{ backgroundImage: `url('https://cdn.fcglcdn.com/brainbees/images/sprite-footer1.1.png')`, backgroundPosition: '-151px 346px' }}></div>
                                 <p className="text-[#676767] hover:text-[#6eacae]">2 Lakhs + <br />  Unique Products</p>
                             </div>
                             <div>
-                                <div className="w-[37px] h-[46px] mx-auto" style={{ backgroundImage: `url('https://cdn.fcglcdn.com/brainbees/images/sprite-footer1.1.png')`, backgroundPosition: '-122px -81px', backgroundPosition: '-107px 348px' }}></div>
+                                <div className="w-[37px] h-[46px] mx-auto" style={{ backgroundImage: `url('https://cdn.fcglcdn.com/brainbees/images/sprite-footer1.1.png')`, backgroundPosition: '-107px 348px' }}></div>
                                 <p className="text-[#676767] hover:text-[#6eacae]">5800 Brands</p>
                             </div>
                             <div>
-                                <div className="w-[37px] h-[46px] mx-auto" style={{ backgroundImage: `url('https://cdn.fcglcdn.com/brainbees/images/sprite-footer1.1.png')`, backgroundPosition: '-122px -81px', backgroundPosition: '-192px 347px' }}></div>
+                                <div className="w-[37px] h-[46px] mx-auto" style={{ backgroundImage: `url('https://cdn.fcglcdn.com/brainbees/images/sprite-footer1.1.png')`, backgroundPosition: '-192px 347px' }}></div>
                                 <p className="text-[#676767] hover:text-[#6eacae]">7.5 Million <br />   Registered Users</p>
                             </div>
                             <div>
-                                <div className="w-[37px] h-[46px] mx-auto" style={{ backgroundImage: `url('https://cdn.fcglcdn.com/brainbees/images/sprite-footer1.1.png')`, backgroundPosition: '-122px -81px', backgroundPosition: '-229px 347px' }}></div>
+                                <div className="w-[37px] h-[46px] mx-auto" style={{ backgroundImage: `url('https://cdn.fcglcdn.com/brainbees/images/sprite-footer1.1.png')`, backgroundPosition: '-229px 347px' }}></div>
                                 <p className="text-[#676767] hover:text-[#6eacae]">Easy Return, Replacement<br /> & Exchange Policy</p>
                             </div>
                             <div>
-                                <div className="w-[37px] h-[46px] mx-auto" style={{ backgroundImage: `url('https://cdn.fcglcdn.com/brainbees/images/sprite-footer1.1.png')`, backgroundPosition: '-122px -81px', backgroundPosition: '-278px 352px' }}></div>
+                                <div className="w-[37px] h-[46px] mx-auto" style={{ backgroundImage: `url('https://cdn.fcglcdn.com/brainbees/images/sprite-footer1.1.png')`, backgroundPosition: '-278px 352px' }}></div>
                                 <p className="text-[#676767] hover:text-[#6eacae]">Free Shipping Available <br /> above ₹ 699*</p>
                             </div>
                         </div>
